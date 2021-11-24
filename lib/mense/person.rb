@@ -7,8 +7,7 @@ require_relative 'profile'
 
 module Mense
   class Person < Mense::Base
-    class Email < Mense::Base
-    end
+    class Email < Mense::Base; end
 
     coerce_key :experience, Array[Mense::Experience]
     coerce_key :education, Array[Mense::Education]
@@ -24,14 +23,21 @@ module Mense
       super(attributes["data"])
     end
 
-    def self.enrich(query = {})
-      response = get('/person/enrich', query: query, headers: { "X-API-Key" => Mense.api_key })
+    def self.enrich(params = {})
+      response = get('/person/enrich', query: params, headers: { "X-API-Key" => Mense.api_key })
 
       self.new(response)
     end
 
-    def self.retrieve(id, query = {})
-      response = get("/person/retrieve/#{id}", query: query, headers: { "X-API-Key" => Mense.api_key })
+    def self.search(params = {})
+      response = get("/person/search", query: params, headers: { "X-API-Key" => Mense.api_key,
+                                                                "Content-Type" => "application/json"})
+
+      self.new(response)
+    end
+
+    def self.retrieve(id, params = {})
+      response = get("/person/retrieve/#{id}", query: params, headers: { "X-API-Key" => Mense.api_key })
 
       self.new(response)
     end
