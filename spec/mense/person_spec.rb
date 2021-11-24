@@ -58,6 +58,12 @@ RSpec.describe Mense::Person do
       expect(person.id).to eql 'qEnOZ5Oh0poWnQ1luFBfVw_0000'
     end
 
+    it 'responds to an alis of find' do
+      person = Mense::Person.find('qEnOZ5Oh0poWnQ1luFBfVw_0000')
+
+      expect(person.id).to eql 'qEnOZ5Oh0poWnQ1luFBfVw_0000'
+    end
+
     it 'maps the emails to the Email class' do
       person = Mense::Person.retrieve('qEnOZ5Oh0poWnQ1luFBfVw_0000')
 
