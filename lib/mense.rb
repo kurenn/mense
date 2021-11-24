@@ -3,6 +3,16 @@
 require_relative "mense/version"
 
 module Mense
-  class Error < StandardError; end
-  # Your code goes here...
+
+  def self.api_key=(api_key)
+    @@api_key = api_key
+  end
+
+  def self.api_key
+    @@api_key
+  end
+
+  def self.configure
+    yield self
+  end
 end
