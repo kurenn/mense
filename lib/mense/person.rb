@@ -33,7 +33,7 @@ module Mense
       response = get("/person/search", query: params, headers: { "X-API-Key" => Mense.api_key,
                                                                 "Content-Type" => "application/json"})
 
-      self.new(response)
+      response
     end
 
     def self.retrieve(id, params = {})
