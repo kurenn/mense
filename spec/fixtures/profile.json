@@ -91,30 +91,6 @@
       {
         "address": "sean@talentiq.co",
         "type": "professional"
-      },
-      {
-        "address": "sean.thorne@talentiq.co",
-        "type": "professional"
-      },
-      {
-        "address": "sean.thorne@gmail.com",
-        "type": "personal"
-      },
-      {
-        "address": "sean@seanthorne.com",
-        "type": null
-      },
-      {
-        "address": "sean@peopledatalabs.com",
-        "type": "current_professional"
-      },
-      {
-        "address": "sean.thorne@peopledatalabs.com",
-        "type": "current_professional"
-      },
-      {
-        "address": "sthorne@peopledatalabs.com",
-        "type": "current_professional"
       }
     ],
     "possible_emails": [
@@ -346,42 +322,6 @@
         "id": null,
         "url": "twitter.com/seanthorne5",
         "username": "seanthorne5"
-      },
-      {
-        "network": "linkedin",
-        "id": null,
-        "url": "linkedin.com/in/sean-thorne-9b9a8540",
-        "username": "sean-thorne-9b9a8540"
-      },
-      {
-        "network": "angellist",
-        "id": null,
-        "url": "angel.co/deseanthorne",
-        "username": "deseanthorne"
-      },
-      {
-        "network": "gravatar",
-        "id": null,
-        "url": "gravatar.com/seanthorne5",
-        "username": "seanthorne5"
-      },
-      {
-        "network": "klout",
-        "id": null,
-        "url": "klout.com/seanthorne5",
-        "username": "seanthorne5"
-      },
-      {
-        "network": "aboutme",
-        "id": null,
-        "url": "about.me/sean_thorne",
-        "username": "sean_thorne"
-      },
-      {
-        "network": "linkedin",
-        "id": null,
-        "url": "linkedin.com/in/acoaaaizp10baq08dng_c7v7ndeffmpgbo1oiqc",
-        "username": "acoaaaizp10baq08dng_c7v7ndeffmpgbo1oiqc"
       }
     ],
     "possible_profiles": [
