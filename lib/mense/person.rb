@@ -22,5 +22,14 @@ module Mense
       self.new(response)
     end
 
+    def self.retrieve(id, query = {})
+      response = get("/person/retrieve/#{id}", query: query, headers: { "X-API-Key" => Mense.api_key })
+
+      self.new(response)
+    end
+
+    class <<self
+      alias_method :find, :retrieve
+    end
   end
 end
