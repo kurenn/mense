@@ -32,3 +32,4 @@ services:
 
     # Enable sending signals (CTRL+C, CTRL+P + CTRL+Q) into the container:
     tty: true
+    env_file: .env
