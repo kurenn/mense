@@ -21,5 +21,12 @@ module Mense
 
       self.new(response)
     end
+
+    def self.search(params = {})
+      response = get("/company/search", query: params, headers: { "X-API-Key" => Mense.api_key,
+                                                                "Content-Type" => "application/json"})
+
+      response
+    end
   end
 end
