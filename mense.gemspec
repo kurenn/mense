@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name          = "mense"
   spec.version       = Mense::VERSION
   spec.authors       = ["Abraham Kuri"]
-  spec.email         = ["kurenn@icalialabs.com"]
+  spec.email         = ["abkuri88@gmail.com"]
 
   spec.summary       = "A wrapper for the People Data Labs API"
   spec.description   = "A wrapper for the People Data Labs API"
