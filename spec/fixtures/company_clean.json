@@ -1,0 +1,30 @@
+{
+  "status": 200,
+  "name": "icalia labs",
+  "size": "11-50",
+  "id": "icalia-labs",
+  "founded": 2012,
+  "industry": "computer software",
+  "location": {
+    "name": "austin, texas, united states",
+    "locality": "austin",
+    "region": "texas",
+    "metro": "austin, texas",
+    "country": "united states",
+    "continent": "north america",
+    "street_address": "701 brazos street",
+    "address_line_2": null,
+    "postal_code": "78701",
+    "geo": "30.26,-97.74"
+  },
+  "linkedin_url": "linkedin.com/company/icalia-labs",
+  "linkedin_id": "2628280",
+  "facebook_url": "facebook.com/icalialabs",
+  "twitter_url": "twitter.com/icalialabs",
+  "website": "icalialabs.com",
+  "ticker": null,
+  "type": "private",
+  "raw": [],
+  "score": 3,
+  "fuzzy_match": false
+}

@@ -14,5 +14,12 @@ module Mense
 
       self.new(response)
     end
+
+    def self.clean(params = {})
+      response = get('/company/clean', query: params, headers: { "X-API-Key" => Mense.api_key,
+                                                                "Content-Type" => "application/json"})
+
+      self.new(response)
+    end
   end
 end

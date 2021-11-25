@@ -25,4 +25,28 @@ RSpec.describe Mense::Company do
       expect(company.location.class).to eql Mense::Company::Location
     end
   end
+
+  describe '.clean' do
+    before do
+      sample_json_data = File.read('spec/fixtures/company_clean.json')
+      response = JSON.parse(sample_json_data)
+
+      allow(Mense::Company).to receive(:get).with('/company/clean',
+                                                 query: { website: 'icalialabs.com' },
+                                                 headers: { "X-API-Key" => Mense.api_key,
+                                                            "Content-Type" => "application/json"}).and_return(response)
+    end
+
+    it 'fetches from the API and maps into a Company object' do
+      company = Mense::Company.clean(website: 'icalialabs.com')
+
+      expect(company.id).to eql 'icalia-labs'
+    end
+
+    it 'sets the Location class for the location nested attribute' do
+      company = Mense::Company.clean(website: 'icalialabs.com')
+
+      expect(company.location.class).to eql Mense::Company::Location
+    end
+  end
 end
