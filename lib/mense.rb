@@ -19,7 +19,6 @@ module Mense
   end
 end
 
-require 'pry'
 require_relative 'mense/client'
 require_relative 'mense/base'
 require_relative 'mense/person'
