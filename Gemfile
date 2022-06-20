@@ -10,5 +10,4 @@ gem "rspec", "~> 3.0"
 group :development do
   gem "rubocop", "~> 1.7"
   gem "solargraph"
-  gem 'pry'
 end

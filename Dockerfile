@@ -37,7 +37,7 @@ WORKDIR /workspaces/mense
 USER ${DEVELOPER_USERNAME}
 
 # Copy the project's Gemfile and Gemfile.lock files:
-COPY --chown=${DEVELOPER_USERNAME} Gemfile* /workspaces/mense/
+COPY --chown=${DEVELOPER_USERNAME} . /workspaces/mense/
 
 # Install the gems in the Gemfile, except for the ones in the "development"
 # group, which shouldn't be required in order to  run the tests with the leanest
